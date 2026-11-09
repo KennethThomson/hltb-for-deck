@@ -93,6 +93,11 @@ export const HLTB_BAR_CSS = `
     align-self: center;
 }
 
+/* The Clean layouts stack the stats, so give the button some room. */
+.hltb-info-clean .hltb-details-item {
+    margin-top: 8px;
+}
+
 .hltb-info .hltb-details-container {
     background: transparent;
     padding: 0;
