@@ -35,7 +35,7 @@ export function drawHltbBox(payload: StoreBoxPayload) {
         left: '16px',
         bottom: '20px',
         'z-index': '999998',
-        'max-width': 'min(420px, 33vw)',
+        'max-width': 'calc(100vw - 32px)',
         margin: '0',
         padding: '0',
         display: 'block',
@@ -73,12 +73,17 @@ export function drawHltbBox(payload: StoreBoxPayload) {
         list.appendChild(item);
     }
 
+    if (payload.rows.length > 0) {
+        info.appendChild(list);
+    }
+
     var details = payload.viewDetails;
     var openDetails = (window as any)[payload.binding];
     // Without the binding the button couldn't do anything, so leave it out.
+    // It gets its own row so the stats stay on one line.
     if (details && typeof openDetails === 'function') {
         var gameId = String(details.gameId);
-        var buttonItem = document.createElement('li');
+        var buttonItem = document.createElement('div');
         buttonItem.className = 'hltb-details-item';
         var button = document.createElement('button');
         button.type = 'button';
@@ -88,10 +93,9 @@ export function drawHltbBox(payload: StoreBoxPayload) {
             openDetails(gameId);
         });
         buttonItem.appendChild(button);
-        list.appendChild(buttonItem);
+        info.appendChild(buttonItem);
     }
 
-    info.appendChild(list);
     wrapper.appendChild(info);
     root.appendChild(wrapper);
     document.body.appendChild(host);

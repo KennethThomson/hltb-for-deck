@@ -111,7 +111,7 @@ export const HLTB_BAR_CSS = `
 export default <style>{HLTB_BAR_CSS}</style>;
 
 // Extra rules for the store page box. The store page doesn't inherit Steam's
-// UI font or text color, and the box has to wrap instead of growing wide.
+// UI font or text color, and the stats stay on one line.
 export const STORE_BAR_CSS = `
 .hltb-store {
     font-family: "Motiva Sans", Arial, Helvetica, sans-serif;
@@ -121,15 +121,24 @@ export const STORE_BAR_CSS = `
 }
 
 .hltb-store .hltb-info ul {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-evenly;
-    gap: 4px 16px;
+    gap: 16px;
+}
+
+.hltb-store .hltb-info li {
+    flex: 0 0 auto;
+    white-space: nowrap;
 }
 
 /* View Details gets its own row, centered under the stats. */
 .hltb-store .hltb-details-item {
-    flex-basis: 100%;
     text-align: center;
+    padding: 0 var(--hltb-pad-x, 35px) var(--hltb-pad-y, 5px);
+}
+
+.hltb-store .hltb-details-item:first-child {
+    padding-top: var(--hltb-pad-y, 5px);
 }
 
 .hltb-store .hltb-details-btn {
