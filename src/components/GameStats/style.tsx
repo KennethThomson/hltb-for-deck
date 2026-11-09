@@ -119,6 +119,12 @@ export const STORE_BAR_CSS = `
     text-align: left;
 }
 
+/* No divider under the store box, so its bottom edge lines up with the
+   other plugins' badges. */
+.hltb-store .hltb-info {
+    border-bottom: 0;
+}
+
 .hltb-store .hltb-info ul {
     flex-wrap: nowrap;
     justify-content: space-evenly;
