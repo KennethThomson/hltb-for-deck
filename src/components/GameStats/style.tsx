@@ -1,6 +1,4 @@
-export default (
-    <style>
-        {`
+export const HLTB_BAR_CSS = `
 
 #hltb-for-deck{
     position: relative;
@@ -108,6 +106,36 @@ export default (
 .hltb-details-btn:hover {
     color: var(--hltb-link-color-focus, #ffffff) !important;
 }
-`}
-    </style>
-);
+`;
+
+export default <style>{HLTB_BAR_CSS}</style>;
+
+// Extra rules for the store page box. The store page doesn't inherit Steam's
+// UI font or text color, and the box has to wrap instead of growing wide.
+export const STORE_BAR_CSS = `
+.hltb-store {
+    font-family: "Motiva Sans", Arial, Helvetica, sans-serif;
+    color: #dcdedf;
+    line-height: normal;
+    text-align: left;
+}
+
+.hltb-store .hltb-info ul {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 4px 16px;
+}
+
+/* View Details gets its own row, centered under the stats. */
+.hltb-store .hltb-details-item {
+    flex-basis: 100%;
+    text-align: center;
+}
+
+.hltb-store .hltb-details-btn {
+    border: 0;
+    padding: 4px 0;
+    cursor: pointer;
+    font-family: inherit;
+}
+`;
