@@ -135,10 +135,24 @@ export const STORE_BAR_CSS = `
     padding-top: var(--hltb-pad-y, 5px);
 }
 
+/* Steam's button classes don't exist in the store page, so this copies the
+   look of the library's Details button. */
 .hltb-store .hltb-details-btn {
+    background: rgb(61, 68, 80);
+    color: #ffffff;
     border: 0;
-    padding: 4px 0;
+    border-radius: 5px;
+    padding: 6px 14px;
     cursor: pointer;
     font-family: inherit;
+    font-size: 12px;
+    line-height: normal;
+}
+
+.hltb-store .hltb-details-btn:focus,
+.hltb-store .hltb-details-btn:hover {
+    background: #ffffff;
+    color: #000000;
+    outline: none;
 }
 `;
