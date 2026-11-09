@@ -130,14 +130,9 @@ export const STORE_BAR_CSS = `
     white-space: nowrap;
 }
 
-/* View Details gets its own row, centered under the stats. */
+/* The details button sits at the end of the stats row. */
 .hltb-store .hltb-details-item {
-    text-align: center;
-    padding: 0 var(--hltb-pad-x, 35px) var(--hltb-pad-y, 5px);
-}
-
-.hltb-store .hltb-details-item:first-child {
-    padding-top: var(--hltb-pad-y, 5px);
+    align-self: center;
 }
 
 /* Steam's button classes don't exist in the store page, so this copies the

@@ -73,17 +73,13 @@ export function drawHltbBox(payload: StoreBoxPayload) {
         list.appendChild(item);
     }
 
-    if (payload.rows.length > 0) {
-        info.appendChild(list);
-    }
-
     var details = payload.viewDetails;
     var openDetails = (window as any)[payload.binding];
     // Without the binding the button couldn't do anything, so leave it out.
-    // It gets its own row so the stats stay on one line.
+    // It goes last in the stats row, like in the library.
     if (details && typeof openDetails === 'function') {
         var gameId = String(details.gameId);
-        var buttonItem = document.createElement('div');
+        var buttonItem = document.createElement('li');
         buttonItem.className = 'hltb-details-item';
         var button = document.createElement('button');
         button.type = 'button';
@@ -93,9 +89,10 @@ export function drawHltbBox(payload: StoreBoxPayload) {
             openDetails(gameId);
         });
         buttonItem.appendChild(button);
-        info.appendChild(buttonItem);
+        list.appendChild(buttonItem);
     }
 
+    info.appendChild(list);
     wrapper.appendChild(info);
     root.appendChild(wrapper);
     document.body.appendChild(host);
