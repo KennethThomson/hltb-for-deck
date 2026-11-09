@@ -17,8 +17,8 @@
     "bottomBorder": "Untere Trennlinie",
     "bottomBorderDesc": "Zeigt eine Trennlinie unter der HLTB-Leiste",
     "resetAppearance": "Darstellung zurücksetzen",
-    "hideViewDetails": "Verstecke \"Details\"",
-    "hideViewDetailsDesc": "Versteckt den \"Details\" Knopf bei der HLTB Statistik",
+    "hideViewDetails": "Verstecke \"HLTB-Details\"",
+    "hideViewDetailsDesc": "Versteckt den \"HLTB-Details\" Knopf bei der HLTB Statistik",
     "toggleMainStat": "Schalte die Haupt Statistik um",
     "toggleMainStatDesc": "Zeigt/Versteckt die Haupt Statistik",
     "toggleMainPlusStat": "Schalte die Haupt + Extra Statistik um",
@@ -33,6 +33,6 @@
     "mainPlusExtras": "Haupt + Extras",
     "completionist": "Vervollständigung",
     "allStyles": "Alle Stile",
-    "viewDetails": "Details",
+    "viewDetails": "HLTB-Details",
     "showHideStats": "Zeigt/Versteckt die HLTB Statistik"
 }

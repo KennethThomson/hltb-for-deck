@@ -17,8 +17,8 @@
     "bottomBorder": "Bottom border",
     "bottomBorderDesc": "Shows a divider line under the HLTB bar",
     "resetAppearance": "Reset appearance",
-    "hideViewDetails": "Hide \"Details\"",
-    "hideViewDetailsDesc": "Hides \"Details\" button on HLTB Stats",
+    "hideViewDetails": "Hide \"HLTB Details\"",
+    "hideViewDetailsDesc": "Hides \"HLTB Details\" button on HLTB Stats",
     "showOnStore": "Show on store pages",
     "showOnStoreDesc": "Shows HLTB stats on game pages in the Steam store",
     "toggleMainStat": "Toggle main stat",
@@ -35,6 +35,6 @@
     "mainPlusExtras": "Main + Extras",
     "completionist": "Completionist",
     "allStyles": "All Styles",
-    "viewDetails": "Details",
+    "viewDetails": "HLTB Details",
     "showHideStats": "Show/Hide HLTB Stats"
 }

@@ -5,8 +5,8 @@
     "cleanDefault": "\"Clean\" Défaut",
     "hltbStyle": "HLTB Style",
     "cleanDesc": "Les styles \"Clean\" sont destinés à fonctionner avec le thème CSS Loader \"Clean Gameview\"",
-    "hideViewDetails": "Masquer \"Informations\"",
-    "hideViewDetailsDesc": "Masque le bouton \"Informations\" dans les statistiques HLTB",
+    "hideViewDetails": "Masquer \"Informations HLTB\"",
+    "hideViewDetailsDesc": "Masque le bouton \"Informations HLTB\" dans les statistiques HLTB",
     "toggleMainStat": "Basculer la statistique principale",
     "toggleMainStatDesc": "Affiche/masque uniquement la statistique principale",
     "toggleMainPlusStat": "Basculer principale+ stat",
@@ -21,6 +21,6 @@
     "mainPlusExtras": "Principal + Extras",
     "completionist": "Achèvement",
     "allStyles": "Tous les styles",
-    "viewDetails": "Informations",
+    "viewDetails": "Informations HLTB",
     "showHideStats": "Afficher/Masquer statistiques HTB"
 }

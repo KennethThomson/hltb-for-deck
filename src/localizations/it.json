@@ -5,8 +5,8 @@
     "cleanDefault": "\"Pulito\" Predefinito",
     "hltbStyle": "Stile HLTB",
     "cleanDesc": "Lo stile \"Pulito\" funziona con il tema CSS Loader \"Clean Gameview\"",
-    "hideViewDetails": "Nascondi i \"Dettagli\"",
-    "hideViewDetailsDesc": "Nasconde il pulsante \"Dettagli\" in HLTB",
+    "hideViewDetails": "Nascondi i \"Dettagli HLTB\"",
+    "hideViewDetailsDesc": "Nasconde il pulsante \"Dettagli HLTB\" in HLTB",
     "toggleMainStat": "Commuta dati principale",
     "toggleMainStatDesc": "Commuta solo dati principale",
     "toggleMainPlusStat": "Commuta dati principale+",
@@ -21,6 +21,6 @@
     "mainPlusExtras": "Campagna + Extra",
     "completionist": "Completista",
     "allStyles": "Tutti gli stili",
-    "viewDetails": "Dettagli",
+    "viewDetails": "Dettagli HLTB",
     "showHideStats": "Commuta dati HLTB"
 }
