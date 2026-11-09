@@ -99,6 +99,12 @@ export const HLTB_BAR_CSS = `
 .hltb-details-btn-clean {
     margin: auto !important;
 }
+.hltb-details-own-line {
+    flex-basis: 100%;
+}
+.hltb-details-own-line .hltb-details-btn {
+    width: auto !important;
+}
 
 .hltb-details-btn:focus {
     color: var(--hltb-link-color-focus, #ffffff) !important;
